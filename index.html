@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Somando Números</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>Somando Números</h2>
+        </div>
+        <div class="form">
+            <div class="form-control">
+                <input type="number" id="number1" placeholder="Digite um número." autocomplete="off" max="20" min="1" required>
+            </div>
+            <div class="form-control">
+                <input type="number" id="number2" placeholder="Digite outro número" autocomplete="off" max="20" min="1" required>
+            </div>
+            <div class="select-calc">
+                <select id="select-counter">
+                    <option value="+" id="person-option">Adição</option>
+                    <option value="-" id="person-option">Subtração</option>
+                    <option value="*" id="person-option">Multiplicação</option>
+                    <option value="/" id="person-option">Divisão</option>
+                    <option value="**" id="person-option">Potência</option>
+                </select>
+            </div>
+            <div class="button-calc">
+                <button onclick="calculate()" id="btn-calc">Calcular</button>
+            </div>
+        </div>
+        <div class="result" id="result">
+            Gerando calculo...
+        </div>
+        <div class="footer-messag">
+            <footer>BY: fhax</footer>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
